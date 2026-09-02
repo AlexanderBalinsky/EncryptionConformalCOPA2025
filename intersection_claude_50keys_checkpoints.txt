@@ -1,0 +1,8 @@
+Key-scaling summary from 50-key run
+
+K,mean_per_key_cov_pct,mean_per_key_set_size,bonferroni_lb_pct,independence_est_pct,observed_inter_cov_pct,observed_inter_mean_size
+10,97.78,7.128,77.76,79.85,94.40,5.874
+20,97.78,7.138,55.50,63.76,,
+30,97.77,7.136,33.10,50.83,,
+40,97.77,7.142,10.88,40.60,,
+50,97.77,7.151,0.00,32.32,91.48,5.278

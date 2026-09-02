@@ -1,0 +1,28 @@
+Running BB sets for 10 keys on device=cuda ...
+key  1: tau=4.4216, BB-cover= 98.14%, mean-set-size= 7.22
+key  2: tau=4.4465, BB-cover= 97.90%, mean-set-size= 7.24
+key  3: tau=4.4296, BB-cover= 97.40%, mean-set-size= 7.04
+key  4: tau=4.3711, BB-cover= 98.36%, mean-set-size= 7.33
+key  5: tau=4.4094, BB-cover= 97.50%, mean-set-size= 7.07
+key  6: tau=4.4463, BB-cover= 97.32%, mean-set-size= 7.00
+key  7: tau=4.4342, BB-cover= 97.62%, mean-set-size= 7.04
+key  8: tau=4.4319, BB-cover= 97.56%, mean-set-size= 7.04
+key  9: tau=4.3998, BB-cover= 98.14%, mean-set-size= 7.20
+key 10: tau=4.4150, BB-cover= 97.82%, mean-set-size= 7.10
+
+Intersection across keys (per image):
+  Mean intersection size: 5.8744
+  Median intersection size: 7.0000
+  Empty intersections: 0.00%
+  Coverage of true label by intersection: 94.40%
+
+Intersection size distribution:
+  size= 1:   182 (  3.64%)
+  size= 2:   284 (  5.68%)
+  size= 3:   364 (  7.28%)
+  size= 4:   296 (  5.92%)
+  size= 5:   176 (  3.52%)
+  size= 6:  1003 ( 20.06%)
+  size= 7:  2141 ( 42.82%)
+  size= 8:   525 ( 10.50%)
+  size= 9:    29 (  0.58%)

@@ -1,0 +1,46 @@
+Building BB prediction sets for 3 keys (alpha=0.4, n=500, epochs=1); this trains 3 models...
+  key  1: tau_e=4.4445  coverage=99.00%  mean|set|=8.10
+  key  2: tau_e=4.5342  coverage=98.60%  mean|set|=8.00
+  key  3: tau_e=4.4914  coverage=99.40%  mean|set|=8.31
+
+=== Per-key (BB) ===
+  coverage  mean 99.00%  (min 98.60%, max 99.40%)
+  set size  mean 8.14
+
+=== Intersection of all 3 keys ===
+  coverage           : 98.40%
+  mean size          : 7.656
+  empty intersections: 0.00%
+  size distribution (0..10): [0, 0, 3, 1, 13, 6, 13, 175, 167, 122, 0]
+
+=== Theory references ===
+  Bonferroni lower bound on coverage : 97.00%
+  independence estimate of coverage  : 97.03%
+  (realized 98.40% should exceed the independence estimate if key errors are positively correlated)
+
+=== Union of all keys (for contrast) ===
+  coverage 99.60%   mean size 8.58
+
+=== Sweep: intersection of first K keys (averaged over random K-subsets) ===
+   K  mean|set|  coverage%   empty%
+   1      8.135      99.00     0.00
+   2      7.829      98.60     0.00
+   3      7.656      98.40     0.00
+
+Saved plot: intersection_tradeoff.png
+
+=== Key-Scaling Checkpoints ===
+This section is intended for direct inclusion in a paper/report.
+    K    cover%  mean|int|   empty%    Bonf%    Indep%
+    2     98.40      7.740     0.00    97.60     97.61
+    3     98.40      7.656     0.00    97.00     97.03
+
+=== Theoretical Interpretation (for LaTeX write-up) ===
+Let C_k(x) be the BB prediction set under key k and C_cap^(K)(x)=intersection_{k=1}^K C_k(x).
+As K increases, |C_cap^(K)(x)| is non-increasing by construction, so ambiguity should shrink.
+Coverage of C_cap^(K) can decrease with K, but empirically often remains high due to correlated errors.
+Bonferroni bound: P(y in C_cap^(K)) >= 1 - sum_{k=1}^K alpha_k, where alpha_k=1-coverage_k.
+Independence estimate: P(y in C_cap^(K)) ~= prod_{k=1}^K (1-alpha_k).
+When realized coverage is much higher than the independence estimate, key-wise misses are positively correlated.
+This means many hard samples are shared across keys rather than missed independently.
+Practical takeaway: increasing K can substantially reduce set size while preserving useful coverage.

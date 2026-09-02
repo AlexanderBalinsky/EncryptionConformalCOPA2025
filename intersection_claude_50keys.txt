@@ -1,0 +1,19 @@
+Building BB prediction sets for 50 keys (alpha=0.4, n=5000, epochs=32); this trains 50 models...
+  key  1: tau_e=4.4216  coverage=98.14%  mean|set|=7.22
+  key  2: tau_e=4.4465  coverage=97.90%  mean|set|=7.24
+  key  3: tau_e=4.4296  coverage=97.40%  mean|set|=7.04
+  key  4: tau_e=4.3711  coverage=98.36%  mean|set|=7.33
+  key  5: tau_e=4.4094  coverage=97.50%  mean|set|=7.07
+  key  6: tau_e=4.4463  coverage=97.32%  mean|set|=7.00
+  key  7: tau_e=4.4342  coverage=97.62%  mean|set|=7.04
+  key  8: tau_e=4.4319  coverage=97.56%  mean|set|=7.04
+  key  9: tau_e=4.3998  coverage=98.14%  mean|set|=7.20
+  key 10: tau_e=4.4150  coverage=97.82%  mean|set|=7.10
+  key 11: tau_e=4.4317  coverage=97.90%  mean|set|=7.30
+  key 12: tau_e=4.3984  coverage=98.02%  mean|set|=7.26
+  key 13: tau_e=4.4454  coverage=97.92%  mean|set|=7.15
+  key 14: tau_e=4.4143  coverage=97.86%  mean|set|=7.24
+  key 15: tau_e=4.4051  coverage=97.82%  mean|set|=7.03
+  key 16: tau_e=4.4394  coverage=97.50%  mean|set|=7.00
+  key 17: tau_e=4.4402  coverage=97.98%  mean|set|=7.20
+  key 18: tau_e=4.3975  coverage=97.64%  mean|set|=7.15

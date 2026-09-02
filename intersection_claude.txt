@@ -1,0 +1,44 @@
+Building BB prediction sets for 10 keys (alpha=0.4, n=5000); this trains 10 models...
+  key  1: tau_e=4.4216  coverage=98.14%  mean|set|=7.22
+  key  2: tau_e=4.4465  coverage=97.90%  mean|set|=7.24
+  key  3: tau_e=4.4296  coverage=97.40%  mean|set|=7.04
+  key  4: tau_e=4.3711  coverage=98.36%  mean|set|=7.33
+  key  5: tau_e=4.4094  coverage=97.50%  mean|set|=7.07
+  key  6: tau_e=4.4463  coverage=97.32%  mean|set|=7.00
+  key  7: tau_e=4.4342  coverage=97.62%  mean|set|=7.04
+  key  8: tau_e=4.4319  coverage=97.56%  mean|set|=7.04
+  key  9: tau_e=4.3998  coverage=98.14%  mean|set|=7.20
+  key 10: tau_e=4.4150  coverage=97.82%  mean|set|=7.10
+
+=== Per-key (BB) ===
+  coverage  mean 97.78%  (min 97.32%, max 98.36%)
+  set size  mean 7.13
+
+=== Intersection of all 10 keys ===
+  coverage           : 94.40%
+  mean size          : 5.874
+  empty intersections: 0.00%
+  size distribution (0..10): [0, 182, 284, 364, 296, 176, 1003, 2141, 525, 29, 0]
+
+=== Theory references ===
+  Bonferroni lower bound on coverage : 77.76%
+  independence estimate of coverage  : 79.85%
+  (realized 94.40% should exceed the independence estimate if key errors are positively correlated)
+
+=== Union of all keys (for contrast) ===
+  coverage 99.82%   mean size 8.48
+
+=== Sweep: intersection of first K keys (averaged over random K-subsets) ===
+   K  mean|set|  coverage%   empty%
+   1      7.129      97.78     0.00
+   2      6.629      96.72     0.00
+   3      6.400      96.13     0.00
+   4      6.247      95.66     0.00
+   5      6.157      95.37     0.00
+   6      6.080      95.10     0.00
+   7      6.019      94.89     0.00
+   8      5.961      94.70     0.00
+   9      5.915      94.54     0.00
+  10      5.874      94.40     0.00
+
+Saved plot: intersection_tradeoff.png

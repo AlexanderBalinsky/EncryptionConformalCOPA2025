@@ -1,0 +1,143 @@
+Building BB prediction sets for 50 keys (alpha=0.4, n=5000, epochs=32); this trains 50 models...
+  key  1: tau_e=4.4216  coverage=98.14%  mean|set|=7.22
+  key  2: tau_e=4.4465  coverage=97.90%  mean|set|=7.24
+  key  3: tau_e=4.4296  coverage=97.40%  mean|set|=7.04
+  key  4: tau_e=4.3711  coverage=98.36%  mean|set|=7.33
+  key  5: tau_e=4.4094  coverage=97.50%  mean|set|=7.07
+  key  6: tau_e=4.4463  coverage=97.32%  mean|set|=7.00
+  key  7: tau_e=4.4342  coverage=97.62%  mean|set|=7.04
+  key  8: tau_e=4.4319  coverage=97.56%  mean|set|=7.04
+  key  9: tau_e=4.3998  coverage=98.14%  mean|set|=7.20
+  key 10: tau_e=4.4150  coverage=97.82%  mean|set|=7.10
+  key 11: tau_e=4.4317  coverage=97.90%  mean|set|=7.30
+  key 12: tau_e=4.3984  coverage=98.02%  mean|set|=7.26
+  key 13: tau_e=4.4454  coverage=97.92%  mean|set|=7.15
+  key 14: tau_e=4.4143  coverage=97.86%  mean|set|=7.24
+  key 15: tau_e=4.4051  coverage=97.82%  mean|set|=7.03
+  key 16: tau_e=4.4394  coverage=97.50%  mean|set|=7.00
+  key 17: tau_e=4.4402  coverage=97.98%  mean|set|=7.20
+  key 18: tau_e=4.3975  coverage=97.64%  mean|set|=7.15
+  key 19: tau_e=4.4007  coverage=97.80%  mean|set|=7.12
+  key 20: tau_e=4.4568  coverage=97.30%  mean|set|=7.04
+  key 21: tau_e=4.4219  coverage=98.10%  mean|set|=7.21
+  key 22: tau_e=4.4154  coverage=98.08%  mean|set|=7.16
+  key 23: tau_e=4.3889  coverage=97.84%  mean|set|=7.24
+  key 24: tau_e=4.4297  coverage=97.94%  mean|set|=7.22
+  key 25: tau_e=4.4138  coverage=97.50%  mean|set|=7.12
+  key 26: tau_e=4.4191  coverage=97.72%  mean|set|=7.05
+  key 27: tau_e=4.4459  coverage=97.62%  mean|set|=7.05
+  key 28: tau_e=4.4447  coverage=97.18%  mean|set|=6.91
+  key 29: tau_e=4.4333  coverage=97.84%  mean|set|=7.12
+  key 30: tau_e=4.4161  coverage=97.78%  mean|set|=7.22
+  key 31: tau_e=4.3971  coverage=98.06%  mean|set|=7.30
+  key 32: tau_e=4.4451  coverage=97.42%  mean|set|=7.16
+  key 33: tau_e=4.4065  coverage=97.60%  mean|set|=7.19
+  key 34: tau_e=4.4180  coverage=97.94%  mean|set|=7.13
+  key 35: tau_e=4.4626  coverage=97.70%  mean|set|=7.12
+  key 36: tau_e=4.4618  coverage=97.92%  mean|set|=7.17
+  key 37: tau_e=4.3744  coverage=97.94%  mean|set|=7.21
+  key 38: tau_e=4.4288  coverage=97.76%  mean|set|=7.01
+  key 39: tau_e=4.3888  coverage=97.96%  mean|set|=7.21
+  key 40: tau_e=4.4438  coverage=97.48%  mean|set|=7.10
+  key 41: tau_e=4.3929  coverage=97.70%  mean|set|=7.13
+  key 42: tau_e=4.4112  coverage=97.90%  mean|set|=7.37
+  key 43: tau_e=4.4486  coverage=97.88%  mean|set|=7.21
+  key 44: tau_e=4.4611  coverage=97.88%  mean|set|=7.11
+  key 45: tau_e=4.3672  coverage=97.74%  mean|set|=7.19
+  key 46: tau_e=4.4093  coverage=97.42%  mean|set|=7.11
+  key 47: tau_e=4.4147  coverage=98.10%  mean|set|=7.26
+  key 48: tau_e=4.4223  coverage=97.70%  mean|set|=7.23
+  key 49: tau_e=4.3861  coverage=97.74%  mean|set|=7.29
+  key 50: tau_e=4.4620  coverage=97.40%  mean|set|=6.99
+
+=== Per-key (BB) ===
+  coverage  mean 97.77%  (min 97.18%, max 98.36%)
+  set size  mean 7.15
+
+=== Intersection of all 50 keys ===
+  coverage           : 91.48%
+  mean size          : 5.278
+  empty intersections: 0.00%
+  size distribution (0..10): [0, 315, 535, 435, 140, 186, 1597, 1709, 83, 0, 0]
+
+=== Theory references ===
+  Bonferroni lower bound on coverage : 0.00%
+  independence estimate of coverage  : 32.32%
+  (realized 91.48% should exceed the independence estimate if key errors are positively correlated)
+
+=== Union of all keys (for contrast) ===
+  coverage 99.92%   mean size 9.07
+
+=== Sweep: intersection of first K keys (averaged over random K-subsets) ===
+   K  mean|set|  coverage%   empty%
+   1      7.152      97.77     0.00
+   2      6.658      96.79     0.00
+   3      6.416      96.18     0.00
+   4      6.282      95.77     0.00
+   5      6.188      95.45     0.00
+   6      6.120      95.24     0.00
+   7      6.054      94.98     0.00
+   8      6.009      94.84     0.00
+   9      5.957      94.60     0.00
+  10      5.932      94.52     0.00
+  11      5.881      94.33     0.00
+  12      5.856      94.24     0.00
+  13      5.818      94.11     0.00
+  14      5.792      93.97     0.00
+  15      5.768      93.84     0.00
+  16      5.738      93.72     0.00
+  17      5.719      93.63     0.00
+  18      5.685      93.53     0.00
+  19      5.673      93.44     0.00
+  20      5.647      93.31     0.00
+  21      5.620      93.20     0.00
+  22      5.601      93.08     0.00
+  23      5.585      93.03     0.00
+  24      5.575      93.03     0.00
+  25      5.550      92.89     0.00
+  26      5.529      92.79     0.00
+  27      5.520      92.73     0.00
+  28      5.509      92.67     0.00
+  29      5.491      92.59     0.00
+  30      5.474      92.50     0.00
+  31      5.462      92.47     0.00
+  32      5.450      92.40     0.00
+  33      5.444      92.38     0.00
+  34      5.430      92.29     0.00
+  35      5.416      92.22     0.00
+  36      5.408      92.18     0.00
+  37      5.395      92.12     0.00
+  38      5.380      92.03     0.00
+  39      5.374      91.99     0.00
+  40      5.364      91.96     0.00
+  41      5.353      91.90     0.00
+  42      5.346      91.86     0.00
+  43      5.334      91.79     0.00
+  44      5.327      91.74     0.00
+  45      5.320      91.72     0.00
+  46      5.311      91.65     0.00
+  47      5.301      91.62     0.00
+  48      5.292      91.56     0.00
+  49      5.286      91.52     0.00
+  50      5.278      91.48     0.00
+
+Saved plot: intersection_tradeoff.png
+
+=== Key-Scaling Checkpoints ===
+This section is intended for direct inclusion in a paper/report.
+    K    cover%  mean|int|   empty%    Bonf%    Indep%
+   10     94.40      5.874     0.00    77.76     79.85
+   20     93.28      5.617     0.00    55.50     63.76
+   30     92.38      5.444     0.00    33.10     50.83
+   40     91.88      5.349     0.00    10.88     40.60
+   50     91.48      5.278     0.00     0.00     32.32
+
+=== Theoretical Interpretation (for LaTeX write-up) ===
+Let C_k(x) be the BB prediction set under key k and C_cap^(K)(x)=intersection_{k=1}^K C_k(x).
+As K increases, |C_cap^(K)(x)| is non-increasing by construction, so ambiguity should shrink.
+Coverage of C_cap^(K) can decrease with K, but empirically often remains high due to correlated errors.
+Bonferroni bound: P(y in C_cap^(K)) >= 1 - sum_{k=1}^K alpha_k, where alpha_k=1-coverage_k.
+Independence estimate: P(y in C_cap^(K)) ~= prod_{k=1}^K (1-alpha_k).
+When realized coverage is much higher than the independence estimate, key-wise misses are positively correlated.
+This means many hard samples are shared across keys rather than missed independently.
+Practical takeaway: increasing K can substantially reduce set size while preserving useful coverage.
